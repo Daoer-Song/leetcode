@@ -2,8 +2,8 @@ from typing import List
 
 def removeDuplicates(nums: List[int]) -> int:
     nums_len = len(nums)
-    for i in range(nums_len-1):
-        for j in range(1,nums_len):
+    for i in range(len(nums)-1):
+        for j in range(1,len(nums)):
             if nums[i] == nums[j]:
                 del nums[j]
                 nums_len -= 1
