@@ -1,7 +1,7 @@
+#
 from typing import List
 
 def removeDuplicates(nums: List[int]) -> int:
-    nums_len = len(nums)
     i = 0
     j = 1
     while j < len(nums):
@@ -9,7 +9,7 @@ def removeDuplicates(nums: List[int]) -> int:
             del nums[j]
         else:
             i += 1
-            j = i + 1
+            j = i+1
                  
     print(nums)
     return len(nums)
