@@ -1,4 +1,4 @@
-#
+#解题思路：双指针，同时使用python时还要避免使用for循环写死循环截止条件
 from typing import List
 
 def removeDuplicates(nums: List[int]) -> int:
